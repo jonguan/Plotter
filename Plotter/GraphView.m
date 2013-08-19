@@ -7,12 +7,11 @@
 //
 
 #import "GraphView.h"
+#import "ViewConstants.h"
 
 @implementation GraphView
 
-float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.88, 0.77, 0.99, 0.55};
-CGRect touchAreas[kNumberOfBars];
-
+static float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.88, 0.77};
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -59,9 +58,25 @@ CGRect touchAreas[kNumberOfBars];
     
     CGContextStrokePath(context);
     
+    
+    
     CGContextRestoreGState(context);
     
     [self drawLineGraphWithContext:context];
+    
+    // Draw x Labels
+    CGContextSetTextMatrix(context, CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0));
+    CGContextSetTextDrawingMode(context, kCGTextFill);
+    
+
+    for (int i = 1; i < sizeof(data); i++)
+    {
+        NSString *theText = [NSString stringWithFormat:@"%d", i];
+        NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:16],  NSStrokeColorAttributeName:[UIColor whiteColor]};
+        CGSize labelSize = [theText sizeWithAttributes:attributes];
+        [theText drawAtPoint:CGPointMake(kOffsetX + i*kStepX - (labelSize.width/2), kGraphBottom-20) withAttributes:attributes];
+        
+    }
 
 }
 
@@ -117,7 +132,7 @@ CGRect touchAreas[kNumberOfBars];
     CGColorSpaceRelease(colorspace);
     CGGradientRelease(gradient);
     
-    CGContextRestoreGState(ctx);
+    
     
     // Add points
     CGContextSetFillColorWithColor(ctx, [[UIColor colorWithRed:1.0 green:0.5 blue:0 alpha:1.0] CGColor]);
@@ -131,6 +146,8 @@ CGRect touchAreas[kNumberOfBars];
     }
     
     CGContextDrawPath(ctx, kCGPathFillStroke);
+    
+    CGContextRestoreGState(ctx);
 }
 
 

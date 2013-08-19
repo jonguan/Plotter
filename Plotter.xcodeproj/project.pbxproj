@@ -59,6 +59,7 @@
 		FD3271E517C28A1B00EBF65D /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		FD9CC1B517C2BC8900F631AC /* PointerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerView.h; sourceTree = "<group>"; };
 		FD9CC1B617C2BC8900F631AC /* PointerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointerView.m; sourceTree = "<group>"; };
+		FDFED9C317C2D409006825C2 /* ViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 				FD3271E517C28A1B00EBF65D /* GraphView.m */,
 				FD9CC1B517C2BC8900F631AC /* PointerView.h */,
 				FD9CC1B617C2BC8900F631AC /* PointerView.m */,
+				FDFED9C317C2D409006825C2 /* ViewConstants.h */,
 			);
 			path = Plotter;
 			sourceTree = "<group>";
@@ -209,6 +211,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Scanadu, Inc.";
 				TargetAttributes = {
+					FD3271AB17C288D500EBF65D = {
+						DevelopmentTeam = 325JP3WHTG;
+					};
 					FD3271CC17C288D500EBF65D = {
 						TestTargetID = FD3271AB17C288D500EBF65D;
 					};
@@ -386,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plotter/Plotter-Prefix.pch";
 				INFOPLIST_FILE = "Plotter/Plotter-Info.plist";
@@ -399,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Plotter/Plotter-Prefix.pch";
 				INFOPLIST_FILE = "Plotter/Plotter-Info.plist";

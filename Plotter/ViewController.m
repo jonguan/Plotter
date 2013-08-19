@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "GraphView.h"
 #import "PointerView.h"
+#import "ViewConstants.h"
 
 @interface ViewController ()
 

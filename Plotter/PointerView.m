@@ -7,8 +7,11 @@
 //
 
 #import "PointerView.h"
+#import "ViewConstants.h"
 
 @implementation PointerView
+
+static float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.88, 0.77};
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -37,10 +40,14 @@
         CGContextStrokePath(context);
         
         // Draw text
+        
+        // Calculate nearest point corresponding to touch
+        int index = (int)roundf((_touchPoint.x-kOffsetX)/kStepX);
         CGContextSetTextDrawingMode(context, kCGTextFill);
         CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
-        NSString *text = [NSString stringWithFormat:@"(%0.1f, %0.1f)", _touchPoint.x, _touchPoint.y];
-        [text drawAtPoint:_touchPoint withAttributes:nil];
+        NSString *text = [NSString stringWithFormat:@"(%d, %0.1f)", kOffsetX + kStepX*index, kOffsetY + data[index]];
+        NSLog(@"%@", text);
+        [text drawAtPoint:CGPointMake(kOffsetX + kStepX*index, data[index] + kOffsetY) withAttributes:nil];
     }
 }
 
