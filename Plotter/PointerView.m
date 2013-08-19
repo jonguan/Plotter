@@ -32,9 +32,15 @@
         CGRect frame = self.frame;
         CGContextSetLineWidth(context, 2.0);
         CGContextSetStrokeColorWithColor(context, [[UIColor colorWithRed:0.4 green:0.8 blue:0.4 alpha:1.0] CGColor]);
-        CGContextMoveToPoint(context, _pointerX, 0);
-        CGContextAddLineToPoint(context, _pointerX, frame.size.height);
+        CGContextMoveToPoint(context, _touchPoint.x, 0);
+        CGContextAddLineToPoint(context, _touchPoint.x, frame.size.height);
         CGContextStrokePath(context);
+        
+        // Draw text
+        CGContextSetTextDrawingMode(context, kCGTextFill);
+        CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
+        NSString *text = [NSString stringWithFormat:@"(%0.1f, %0.1f)", _touchPoint.x, _touchPoint.y];
+        [text drawAtPoint:_touchPoint withAttributes:nil];
     }
 }
 
@@ -43,9 +49,9 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self];
+    _touchPoint = [touch locationInView:self];
     
-    _pointerX = point.x;
+
     _drawPointer = YES;
     [self setNeedsDisplay];
 }

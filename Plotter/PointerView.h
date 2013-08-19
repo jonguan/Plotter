@@ -10,7 +10,7 @@
 
 @interface PointerView : UIView
 {
-    float _pointerX;
+    CGPoint _touchPoint;
     BOOL _drawPointer;
 }
 @end
