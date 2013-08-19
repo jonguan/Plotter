@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD3271B017C288D500EBF65D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3271AF17C288D500EBF65D /* Foundation.framework */; };
+		FD3271B217C288D500EBF65D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3271B117C288D500EBF65D /* CoreGraphics.framework */; };
+		FD3271B417C288D500EBF65D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3271B317C288D500EBF65D /* UIKit.framework */; };
+		FD3271BA17C288D500EBF65D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD3271B817C288D500EBF65D /* InfoPlist.strings */; };
+		FD3271BC17C288D500EBF65D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271BB17C288D500EBF65D /* main.m */; };
+		FD3271C017C288D500EBF65D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271BF17C288D500EBF65D /* AppDelegate.m */; };
+		FD3271C317C288D500EBF65D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD3271C117C288D500EBF65D /* Main.storyboard */; };
+		FD3271C617C288D500EBF65D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271C517C288D500EBF65D /* ViewController.m */; };
+		FD3271C817C288D500EBF65D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3271C717C288D500EBF65D /* Images.xcassets */; };
+		FD3271CF17C288D500EBF65D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3271CE17C288D500EBF65D /* XCTest.framework */; };
+		FD3271D017C288D500EBF65D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3271AF17C288D500EBF65D /* Foundation.framework */; };
+		FD3271D117C288D500EBF65D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD3271B317C288D500EBF65D /* UIKit.framework */; };
+		FD3271D917C288D500EBF65D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD3271D717C288D500EBF65D /* InfoPlist.strings */; };
+		FD3271DB17C288D500EBF65D /* PlotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271DA17C288D500EBF65D /* PlotterTests.m */; };
+		FD3271E617C28A1B00EBF65D /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271E517C28A1B00EBF65D /* GraphView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3271D217C288D500EBF65D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3271A417C288D500EBF65D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3271AB17C288D500EBF65D;
+			remoteInfo = Plotter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD3271AC17C288D500EBF65D /* Plotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3271AF17C288D500EBF65D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD3271B117C288D500EBF65D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD3271B317C288D500EBF65D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD3271B717C288D500EBF65D /* Plotter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Plotter-Info.plist"; sourceTree = "<group>"; };
+		FD3271B917C288D500EBF65D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD3271BB17C288D500EBF65D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD3271BD17C288D500EBF65D /* Plotter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Plotter-Prefix.pch"; sourceTree = "<group>"; };
+		FD3271BE17C288D500EBF65D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD3271BF17C288D500EBF65D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD3271C217C288D500EBF65D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD3271C417C288D500EBF65D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD3271C517C288D500EBF65D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FD3271C717C288D500EBF65D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD3271CD17C288D500EBF65D /* PlotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3271CE17C288D500EBF65D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FD3271D617C288D500EBF65D /* PlotterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlotterTests-Info.plist"; sourceTree = "<group>"; };
+		FD3271D817C288D500EBF65D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD3271DA17C288D500EBF65D /* PlotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlotterTests.m; sourceTree = "<group>"; };
+		FD3271E417C28A1B00EBF65D /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		FD3271E517C28A1B00EBF65D /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD3271A917C288D500EBF65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3271B217C288D500EBF65D /* CoreGraphics.framework in Frameworks */,
+				FD3271B417C288D500EBF65D /* UIKit.framework in Frameworks */,
+				FD3271B017C288D500EBF65D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3271CA17C288D500EBF65D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3271CF17C288D500EBF65D /* XCTest.framework in Frameworks */,
+				FD3271D117C288D500EBF65D /* UIKit.framework in Frameworks */,
+				FD3271D017C288D500EBF65D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD3271A317C288D500EBF65D = {
+			isa = PBXGroup;
+			children = (
+				FD3271B517C288D500EBF65D /* Plotter */,
+				FD3271D417C288D500EBF65D /* PlotterTests */,
+				FD3271AE17C288D500EBF65D /* Frameworks */,
+				FD3271AD17C288D500EBF65D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3271AD17C288D500EBF65D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3271AC17C288D500EBF65D /* Plotter.app */,
+				FD3271CD17C288D500EBF65D /* PlotterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD3271AE17C288D500EBF65D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD3271AF17C288D500EBF65D /* Foundation.framework */,
+				FD3271B117C288D500EBF65D /* CoreGraphics.framework */,
+				FD3271B317C288D500EBF65D /* UIKit.framework */,
+				FD3271CE17C288D500EBF65D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD3271B517C288D500EBF65D /* Plotter */ = {
+			isa = PBXGroup;
+			children = (
+				FD3271BE17C288D500EBF65D /* AppDelegate.h */,
+				FD3271BF17C288D500EBF65D /* AppDelegate.m */,
+				FD3271C117C288D500EBF65D /* Main.storyboard */,
+				FD3271C417C288D500EBF65D /* ViewController.h */,
+				FD3271C517C288D500EBF65D /* ViewController.m */,
+				FD3271C717C288D500EBF65D /* Images.xcassets */,
+				FD3271B617C288D500EBF65D /* Supporting Files */,
+				FD3271E417C28A1B00EBF65D /* GraphView.h */,
+				FD3271E517C28A1B00EBF65D /* GraphView.m */,
+			);
+			path = Plotter;
+			sourceTree = "<group>";
+		};
+		FD3271B617C288D500EBF65D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD3271B717C288D500EBF65D /* Plotter-Info.plist */,
+				FD3271B817C288D500EBF65D /* InfoPlist.strings */,
+				FD3271BB17C288D500EBF65D /* main.m */,
+				FD3271BD17C288D500EBF65D /* Plotter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD3271D417C288D500EBF65D /* PlotterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3271DA17C288D500EBF65D /* PlotterTests.m */,
+				FD3271D517C288D500EBF65D /* Supporting Files */,
+			);
+			path = PlotterTests;
+			sourceTree = "<group>";
+		};
+		FD3271D517C288D500EBF65D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD3271D617C288D500EBF65D /* PlotterTests-Info.plist */,
+				FD3271D717C288D500EBF65D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD3271AB17C288D500EBF65D /* Plotter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3271DE17C288D500EBF65D /* Build configuration list for PBXNativeTarget "Plotter" */;
+			buildPhases = (
+				FD3271A817C288D500EBF65D /* Sources */,
+				FD3271A917C288D500EBF65D /* Frameworks */,
+				FD3271AA17C288D500EBF65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Plotter;
+			productName = Plotter;
+			productReference = FD3271AC17C288D500EBF65D /* Plotter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD3271CC17C288D500EBF65D /* PlotterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3271E117C288D500EBF65D /* Build configuration list for PBXNativeTarget "PlotterTests" */;
+			buildPhases = (
+				FD3271C917C288D500EBF65D /* Sources */,
+				FD3271CA17C288D500EBF65D /* Frameworks */,
+				FD3271CB17C288D500EBF65D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3271D317C288D500EBF65D /* PBXTargetDependency */,
+			);
+			name = PlotterTests;
+			productName = PlotterTests;
+			productReference = FD3271CD17C288D500EBF65D /* PlotterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD3271A417C288D500EBF65D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Scanadu, Inc.";
+				TargetAttributes = {
+					FD3271CC17C288D500EBF65D = {
+						TestTargetID = FD3271AB17C288D500EBF65D;
+					};
+				};
+			};
+			buildConfigurationList = FD3271A717C288D500EBF65D /* Build configuration list for PBXProject "Plotter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD3271A317C288D500EBF65D;
+			productRefGroup = FD3271AD17C288D500EBF65D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD3271AB17C288D500EBF65D /* Plotter */,
+				FD3271CC17C288D500EBF65D /* PlotterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD3271AA17C288D500EBF65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3271C817C288D500EBF65D /* Images.xcassets in Resources */,
+				FD3271BA17C288D500EBF65D /* InfoPlist.strings in Resources */,
+				FD3271C317C288D500EBF65D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3271CB17C288D500EBF65D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3271D917C288D500EBF65D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD3271A817C288D500EBF65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3271C617C288D500EBF65D /* ViewController.m in Sources */,
+				FD3271C017C288D500EBF65D /* AppDelegate.m in Sources */,
+				FD3271BC17C288D500EBF65D /* main.m in Sources */,
+				FD3271E617C28A1B00EBF65D /* GraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3271C917C288D500EBF65D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3271DB17C288D500EBF65D /* PlotterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD3271D317C288D500EBF65D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3271AB17C288D500EBF65D /* Plotter */;
+			targetProxy = FD3271D217C288D500EBF65D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD3271B817C288D500EBF65D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3271B917C288D500EBF65D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD3271C117C288D500EBF65D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3271C217C288D500EBF65D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD3271D717C288D500EBF65D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD3271D817C288D500EBF65D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD3271DC17C288D500EBF65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD3271DD17C288D500EBF65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD3271DF17C288D500EBF65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotter/Plotter-Prefix.pch";
+				INFOPLIST_FILE = "Plotter/Plotter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD3271E017C288D500EBF65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotter/Plotter-Prefix.pch";
+				INFOPLIST_FILE = "Plotter/Plotter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD3271E217C288D500EBF65D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Plotter.app/Plotter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotter/Plotter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PlotterTests/PlotterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FD3271E317C288D500EBF65D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Plotter.app/Plotter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Plotter/Plotter-Prefix.pch";
+				INFOPLIST_FILE = "PlotterTests/PlotterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD3271A717C288D500EBF65D /* Build configuration list for PBXProject "Plotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3271DC17C288D500EBF65D /* Debug */,
+				FD3271DD17C288D500EBF65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3271DE17C288D500EBF65D /* Build configuration list for PBXNativeTarget "Plotter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3271DF17C288D500EBF65D /* Debug */,
+				FD3271E017C288D500EBF65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD3271E117C288D500EBF65D /* Build configuration list for PBXNativeTarget "PlotterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3271E217C288D500EBF65D /* Debug */,
+				FD3271E317C288D500EBF65D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD3271A417C288D500EBF65D /* Project object */;
+}
