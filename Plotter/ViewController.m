@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "GraphView.h"
+#import "PointerView.h"
 
 @interface ViewController ()
 
@@ -21,8 +22,12 @@
 
     self.scrollView.contentSize = CGSizeMake(kDefaultGraphWidth, kGraphHeight);
     
-    self.graphView = [[GraphView alloc] initWithFrame:CGRectMake(0, 0, kDefaultGraphWidth, kGraphHeight)];
+    CGRect rect = CGRectMake(0, 0, kDefaultGraphWidth, kGraphHeight);
+    self.graphView = [[GraphView alloc] initWithFrame:rect];
     [self.scrollView addSubview:self.graphView];
+    
+    PointerView *pointView = [[PointerView alloc] initWithFrame:rect];
+    [self.scrollView addSubview:pointView];
 }
 
 - (void)didReceiveMemoryWarning

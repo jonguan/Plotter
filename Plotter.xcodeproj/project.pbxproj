@@ -22,6 +22,7 @@
 		FD3271D917C288D500EBF65D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD3271D717C288D500EBF65D /* InfoPlist.strings */; };
 		FD3271DB17C288D500EBF65D /* PlotterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271DA17C288D500EBF65D /* PlotterTests.m */; };
 		FD3271E617C28A1B00EBF65D /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3271E517C28A1B00EBF65D /* GraphView.m */; };
+		FD9CC1B717C2BC8900F631AC /* PointerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD9CC1B617C2BC8900F631AC /* PointerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		FD3271DA17C288D500EBF65D /* PlotterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlotterTests.m; sourceTree = "<group>"; };
 		FD3271E417C28A1B00EBF65D /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		FD3271E517C28A1B00EBF65D /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		FD9CC1B517C2BC8900F631AC /* PointerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointerView.h; sourceTree = "<group>"; };
+		FD9CC1B617C2BC8900F631AC /* PointerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				FD3271B617C288D500EBF65D /* Supporting Files */,
 				FD3271E417C28A1B00EBF65D /* GraphView.h */,
 				FD3271E517C28A1B00EBF65D /* GraphView.m */,
+				FD9CC1B517C2BC8900F631AC /* PointerView.h */,
+				FD9CC1B617C2BC8900F631AC /* PointerView.m */,
 			);
 			path = Plotter;
 			sourceTree = "<group>";
@@ -258,6 +263,7 @@
 				FD3271C017C288D500EBF65D /* AppDelegate.m in Sources */,
 				FD3271BC17C288D500EBF65D /* main.m in Sources */,
 				FD3271E617C28A1B00EBF65D /* GraphView.m in Sources */,
+				FD9CC1B717C2BC8900F631AC /* PointerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				FD3271E017C288D500EBF65D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD3271E117C288D500EBF65D /* Build configuration list for PBXNativeTarget "PlotterTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				FD3271E317C288D500EBF65D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
