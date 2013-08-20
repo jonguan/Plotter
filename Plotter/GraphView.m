@@ -30,6 +30,7 @@ static float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.
     // Context
     CGContextRef context = UIGraphicsGetCurrentContext();
     
+    
     // White background
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextFillRect(context, rect);
@@ -65,7 +66,7 @@ static float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.
     [self drawLineGraphWithContext:context];
     
     // Draw x Labels
-    CGContextSetTextMatrix(context, CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0));
+//    CGContextSetTextMatrix(context, CGAffineTransformMake(1.0, 0.0, 0.0, -1.0, 0.0, 0.0));
     CGContextSetTextDrawingMode(context, kCGTextFill);
     
 
@@ -84,12 +85,15 @@ static float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.
 {
     CGContextSaveGState(ctx);
     
-    // Draw the lines
+//    CGContextScaleCTM(ctx, 1.0, -1.0f);
+//    CGContextTranslateCTM(ctx, 0, self.frame.size.height);
+    
     CGContextSetLineWidth(ctx, 2.0);
     CGContextSetStrokeColorWithColor(ctx, [[UIColor colorWithRed:1.0 green:0.5 blue:0 alpha:1.0] CGColor]);
     CGContextSetFillColorWithColor(ctx, [[UIColor colorWithRed:1.0 green:0.5 blue:0 alpha:0.5] CGColor]);
 
     int maxGraphHeight = kGraphHeight - kOffsetY;
+    NSLog(@"%lu", sizeof(data));
     // Line
     CGContextBeginPath(ctx);
     CGContextMoveToPoint(ctx, kOffsetX, kGraphHeight - maxGraphHeight * data[0]);

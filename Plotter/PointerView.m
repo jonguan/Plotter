@@ -43,11 +43,12 @@ static float data[] = {0.7, 0.4, 0.9, 1.0, 0.2, 0.85, 0.11, 0.75, 0.53, 0.44, 0.
         
         // Calculate nearest point corresponding to touch
         int index = (int)roundf((_touchPoint.x-kOffsetX)/kStepX);
+        CGFloat maxGraphHeight = kGraphHeight-kOffsetY;
         CGContextSetTextDrawingMode(context, kCGTextFill);
         CGContextSetFillColorWithColor(context, [UIColor blackColor].CGColor);
-        NSString *text = [NSString stringWithFormat:@"(%d, %0.1f)", kOffsetX + kStepX*index, kOffsetY + data[index]];
+        NSString *text = [NSString stringWithFormat:@"(%d, %0.1f)", kOffsetX + kStepX*index, kGraphHeight - maxGraphHeight * data[index]];
         NSLog(@"%@", text);
-        [text drawAtPoint:CGPointMake(kOffsetX + kStepX*index, data[index] + kOffsetY) withAttributes:nil];
+        [text drawAtPoint:CGPointMake(kOffsetX + kStepX*index, kGraphHeight - maxGraphHeight * data[index]) withAttributes:nil];
     }
 }
 
