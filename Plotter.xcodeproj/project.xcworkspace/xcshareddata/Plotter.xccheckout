@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>81FE746C-6D1C-495E-95DF-67FDAE5F9E56</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Plotter</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5E3E31C5-EE41-4394-85FD-CD8F7DAD9A82</key>
+		<string>ssh://github.com/jonguan/Plotter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Plotter.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5E3E31C5-EE41-4394-85FD-CD8F7DAD9A82</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/jonguan/Plotter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5E3E31C5-EE41-4394-85FD-CD8F7DAD9A82</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5E3E31C5-EE41-4394-85FD-CD8F7DAD9A82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Plotter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
